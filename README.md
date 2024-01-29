@@ -1,6 +1,6 @@
 Nike Clone Website 
 
-![Screenshot](https://drive.google.com/file/d/1RLVljyxvlraUQmDCOD3LDfSRTuNTvwf3/view?usp=drive_link)
+![Screenshot](Nike.png)
 
 
 Technologies used:
