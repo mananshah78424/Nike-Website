@@ -1,6 +1,6 @@
 Nike Clone Website 
 
-![Uploading Screenshot 2024-01-28 at 7.55.19 PM.png…]()
+![alt text](https://drive.google.com/file/d/1RLVljyxvlraUQmDCOD3LDfSRTuNTvwf3/view?usp=drive_link)
 
 
 Technologies used:
