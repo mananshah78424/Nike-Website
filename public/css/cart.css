@@ -1,0 +1,156 @@
+.forcart {
+  margin: auto;
+  text-align: center;
+}
+.empty-cart {
+  margin-top: 50px;
+}
+.heading {
+  font-size: 3xl;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+.gobackbtn {
+  background-color: orange;
+  border-radius: 29px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 15px 34px;
+  text-decoration: none;
+  margin-top: 12px;
+}
+.gobackbtn:hover {
+  background-color: tan;
+  color: white;
+}
+.emptycartimg {
+  width: 60%;
+  margin: auto;
+}
+.emptytext {
+  color: gray;
+  font-size: large;
+  margin-bottom: 5%;
+}
+
+.cart {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.order {
+  margin: auto;
+  width: 50%;
+}
+.ordersummaryimg {
+  width: 6%;
+}
+.ordersummarypart {
+  margin-top: 6%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  padding-bottom: 4%;
+}
+.ordersummarytext {
+  font-weight: bold;
+  margin-left: 12px;
+  font-size: x-large;
+}
+
+.shoeitemincart {
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.shoeitemimg {
+  width: 26%;
+}
+.shoedetail {
+  flex: 1;
+  margin-left: 25px;
+}
+.shoeitemsizeandqty {
+  display: flex;
+}
+.shoeitemtype,
+.shoeitemsizeandqty {
+  color: #444343;
+  font-weight: normal;
+}
+.shoeitemsize {
+  margin-right: 100px;
+  font-weight: normal;
+}
+.shoeitemqty {
+  font-weight: normal;
+}
+
+.totalamount {
+  text-align: right;
+}
+.totalamounttext {
+  font-size: x-large;
+  font-weight: 600;
+}
+.totalamountprice {
+  color: orange;
+  margin-left: 2%;
+  font-size: x-large;
+  font-weight: 600;
+}
+.addressinput {
+  margin-top: 8%;
+  border: 1px solid gray;
+  width: 50%;
+  padding: 1%;
+}
+.ordernowbutton {
+  padding: 16px 28px;
+  cursor: pointer;
+  border-radius: 28px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  margin-top: 2%;
+  background-color: orange;
+  outline: none;
+}
+.ordernowbutton:focus {
+  outline: none;
+}
+.loginbutton {
+  display: inline-block;
+  cursor: pointer;
+  padding: 16px 28px;
+  cursor: pointer;
+  border-radius: 28px;
+  border: none;
+  background-color: orange;
+  font-weight: 600;
+  margin-top: 2%;
+}
+.removeshoefromcart {
+  margin-left: 10px;
+  background-color: orange;
+  border: none;
+  outline: none;
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+  border-radius: 20px;
+  text-decoration: none;
+  align-items: center;
+  font-weight: 600;
+  width: 25%;
+}
+.removetext {
+  margin-left: 1rem;
+}
+.removeshoefromcart:focus {
+  outline: none;
+}

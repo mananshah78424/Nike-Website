@@ -1,0 +1,12 @@
+.details {
+  display: flex;
+  justify-content: center;
+}
+.dettext {
+  padding-top: 100px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.avatar_image {
+  width: 20%;
+}

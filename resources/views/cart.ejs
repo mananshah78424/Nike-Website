@@ -1,0 +1,86 @@
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<link rel="stylesheet" href="/css/cart.css">
+<section class="cart">
+  <% if(session.cart) {%>
+
+
+  <div class="order container">
+    <div class="ordersummarypart">
+      <img src="/images/cart-black.png" alt="" class="ordersummaryimg">
+      <h1 class="ordersummarytext">Order Summary</h1>
+    </div>
+    <span class="itemremoved"></span>
+    <div class="shoe-list">
+
+      <% for(let shoe of Object.values(session.cart.items)){ %>
+      <div class="shoeitemincart">
+        <img src="<%=shoe.item.image %>" alt="" class="shoeitemimg">
+        <!-- <div class="shoeitemnameandsize">
+          <h5><%=shoe.item.name %></h5>
+
+        </div>
+        <h5><span class="shoeitemsize"><%= shoe.item.size %></span></h5>
+        <h5><span class="shoeitemqty">Qty: <%=shoe.qty %></span></h5>
+        <span class="shoeitemprice">
+          <h5>₹<%=shoe.item.price *shoe.qty %></h5>
+        </span> -->
+
+        <div class="shoedetail">
+          <h5 class="shoeitemname"><%=shoe.item.name %></h5>
+          <h5 class="shoeitemtype"><%=shoe.item.type %></h5>
+          <div class="shoeitemsizeandqty">
+            <h5><span class="shoeitemsize">Size: <%= shoe.item.size %></span></h5>
+            <h5><span class="shoeitemqty">Qty: <%=shoe.qty %></span></h5>
+          </div>
+
+        </div>
+        <h5><span class="shoeitemprice">₹<%=shoe.item.price *shoe.qty %></span></h5>
+
+        <button data-shoes="<%= JSON.stringify(shoe)%>" class="removeshoefromcart btn-primary">
+          <span>-</span>
+          <span class="removetext">Remove</span>
+        </button>
+      </div>
+      <% } %>
+
+    </div>
+    <hr>
+    <div class="totalamount">
+      <div>
+        <span class="totalamounttext">Total Amount</span>
+        <span class="totalamountprice">₹ <%=session.cart.totalPrice %></span>
+      </div>
+
+      <% if(user) { %>
+      <div>
+        <form action="/orders" method="POST">
+          <input type="text" id="" class="addressinput" placeholder="Address" name="address">
+          <div class="cartbuttons">
+            <button type="submit" class="btn-primary ordernowbutton">Order Now</button>
+          </div>
+        </form>
+      </div>
+      <% }else{ %>
+      <a href="/login" role="button" class="btn-primary loginbutton">Login to continue</a>
+      <%}%>
+    </div>
+  </div>
+  <% } else{ %>
+
+
+      <div class="empty-cart">
+        <div class="container forcart">
+          <h1 class="heading">Cart Empty 😢</h1>
+          <p class="emptytext">You probably havent added anything to the cart yet. <br>
+            To add go to the explore page where you can see all the shoes
+          </p>
+          <img class="emptycartimg" src="/images/empty-cart.png" alt="">
+          <div>
+            <a href="/explore" class="gobackbtn ">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <%}%>
+      <script src="/js/removecartitem.js"></script>
+</section>
+    

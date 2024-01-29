@@ -1,0 +1,67 @@
+
+[{ 
+    "_id" :{
+        "$oid":"5f5645853de5269e1f9805b8"
+    }, 
+    "size" : "3 4 9", 
+    "sizearray" : [
+        "3", 
+        "4", 
+        "9"
+    ], 
+    "gender" : "men", 
+    "type" : "football", 
+    "name" : "HyperVenom", 
+    "Price" : "3000", 
+    "image" : "images/best1.png", 
+    "desc" : "Introducing the latest version of Flyknit—AtomKnit. Flyknit fabric is steamed and stretched, delivering a lightweight, contoured fit with minimal water absorption and enhanced breathability.The outsole was created using data from hundreds of runners. That data helped inform the design, with different angles of traction placed where you need it. This helps provide grip from toe-off through every phase of your stride."
+},
+{ 
+    "_id" : {
+        "$oid":"5f5645853de5269e1f9805bb"
+    }, 
+    "size" : "5 6 7", 
+    "sizearray" : [
+        "5", 
+        "6", 
+        "7"
+    ], 
+    "gender" : "kids", 
+    "type" : "football", 
+    "name" : "Mercurial", 
+    "Price" : "3000", 
+    "image" : "images/best2.png", 
+    "desc" : "this is the desc"
+},
+{ 
+    "_id" : {
+        "$oid":"5f5645853de5269e1f9805be"
+    }, 
+    "size" : "6 10", 
+    "sizearray" : [
+        "6", 
+        "10"
+    ], 
+    "gender" : "men", 
+    "type" : "running", 
+    "name" : "AirPro", 
+    "Price" : "3000", 
+    "image" : "images/best1.png", 
+    "desc" : "3rd description"
+},
+{ 
+    "_id" : {
+        "$oid":"5f5645853de5269e1f9805c1"
+    }, 
+    "size" : "7 8", 
+    "sizearray" : [
+        "7", 
+        "8"
+    ], 
+    "gender" : "women", 
+    "type" : "jordans", 
+    "name" : "jordans", 
+    "Price" : "3000", 
+    "image" : "images/best1.png", 
+    "desc" : "4th desc"
+}]

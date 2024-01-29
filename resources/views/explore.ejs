@@ -1,0 +1,197 @@
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/explore.css">
+
+<div class="searchbar form-group has-search">
+    <span class="fa fa-search form-control-feedback"></span>
+    <input type="text" class="form-control " placeholder="Search" id="myInput">
+
+    <a role="button" onclick="myFunction()" class="hidefilters" id="hidefilters">Hide Filters</a>
+</div>
+
+<div class="row mt-5 col-md-12">
+    <div class="filtercolumn col-md-2 mb-4" id="myDIV">
+        <section>
+            <section>
+
+                <!-- --------------------FILTERS------------------- -->
+                <h2>Filters</h2>
+                <hr>
+                <section class="type_of_shoes">
+                    <h5 class="mb-3">Type Of Shoes</h5>
+                    <div class="mb-5 category_container">
+                        <p class="mb-3"><a href="#" class="shoecategory" id="All">All</a></p>
+                        <p class="mb-3"><a href="#" class="shoecategory" id="Casuals">Casuals</a></p>
+                        <p class="mb-3"><a href="#!" class="shoecategory" id="Gym">Gym</a></p>
+                        <p class="mb-3"><a href="#!" class="shoecategory" id="Sportswear">Sportswear</a></p>
+                        <p class="mb-3"><a href="#!" class="shoecategory" id="Football">Football</a></p>
+                        <p class="mb-3"><a href="#!" class="shoecategory" id="Running">Running</a></p>
+                        <p class="mb-3"><a href="#!" class="shoecategory" id="Jordans">Jordans</a></p>
+                    </div>
+                </section>
+                <hr>
+
+                <!-- ------------------BY AGE AND GENDER------------------- -->
+
+                <section class="mb-4" filter="size">
+                    <h6 class="font-weight-bold mb-3">Gender</h6>
+                    <div class="genderoption">
+                        <div class="pl-0  gender">
+                            <input type="radio" class=" genderselect" id="men" name="gendercheckbox" />
+                            <label class="" for="men">Men</label>
+                        </div>
+                        <div class="pl-0 gender">
+                            <input type="radio" class="genderselect" id="women" name="gendercheckbox" />
+                            <label class="" for="Women">Women</label>
+                        </div>
+                        <div class="pl-0  gender">
+                            <input type="radio" class="genderselect" id="kids" name="gendercheckbox" />
+                            <label class="" for="kids">Kids</label>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+
+
+                <!-- ------------------------SIZE---------------------- -->
+                <section>
+                    <h6 class="font-weight-bold mb-3">Sizes (US)
+                        <p class="buttonsize reset" id="reset">Reset</p>
+                    </h6>
+                    <div class="sizes" id="sizes">
+                        <div class="col-md-12 row size">
+                            <div class="col-md-4 sizeofshoe">
+                                <input class="buttonsize" type="button" value="3" id="3" />
+                            </div>
+                            <div class="col-md-4 sizeofshoe">
+                                <input class="buttonsize" type="button" value="4" id="4" />
+                            </div>
+                            <div class="col-md-4 sizeofshoe">
+                                <input class="buttonsize" type="button" value="5" id="5" />
+                            </div>
+                        </div>
+                        <div class="col-md-12 row size">
+                            <div class="col-md-4 sizeofshoe">
+                                <input class="buttonsize" type="button" value="6" id="6" />
+                            </div>
+                            <div class="col-md-4 sizeofshoe">
+                                <input class="buttonsize" type="button" value="7" id="7" />
+                            </div>
+                            <div class="col-md-4 sizeofshoe">
+                                <input class="buttonsize" type="button" value="8" id="8" />
+                            </div>
+                        </div>
+                        <div class="col-md-12 row size">
+                            <div class="col-md-4 sizeofshoe">
+                                <input class="buttonsize" type="button" value="9" id="9" />
+                            </div>
+                            <div class="col-md-4 sizeofshoe">
+                                <input class="buttonsize" type="button" value="10" id="10" />
+                            </div>
+                            <div class="col-md-4 sizeofshoe">
+                                <input class="buttonsize" type="button" value="11" id="11" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+
+
+                <!-- -----------------------PRICE-------------------- -->
+
+
+                <!-- <section class="mb-4 price" filter="price">
+                    <h6 class="font-weight-bold mb-3">Price</h6>
+
+                    <div class=" pl-0 mb-3">
+                        <input price="0-25" type="radio" class="price" name="radiobutton" id="1500" />
+                        <label for="under25">Under ₹1500</label>
+                    </div>
+                    <div class="= pl-0 mb-3">
+                        <input price="25-50" type="radio" class="price" name="radiobutton" id="1500-2250" />
+                        <label for="2550">₹1500-₹2250</label>
+                    </div>
+                    <div class=" pl-0 mb-3">
+                        <input price="50-100" type="radio" class="price" name="radiobutton" id="2250-3000" />
+                        <label for="50100">₹2250-₹3000</label>
+                    </div>
+                    <div class="pl-0 mb-3">
+                        <input price="100-200" type="radio" class="price" name="radiobutton" id="3000-5000" />
+                        <label for="100200">₹3000-₹5000</label>
+                    </div>
+                    <div class=" pl-0 mb-3">
+                        <input price="200-*" type="radio" class="price" name="radiobutton" id="5000" />
+                        <label for="200above">₹5000 & Above</label>
+                    </div>
+                </section> -->
+                <!-- <b>Price Range: </b><span id="range"></span>
+                <div id="slider"></div>
+                <div id="output"></div> -->
+
+                <section class="lacetype">
+                    <h5 class="mb-3">Lace Type</h5>
+                    <div class="mb-5 category_container">
+                        <p class="mb-3"><a href="#" class="lacecategory" id="Lace">Lace</a></p>
+                        <p class="mb-3"><a href="#" class="lacecategory" id="No Lace">No Lace</a></p>
+                        <p class="mb-3"><a href="#!" class="lacecategory" id="Valcro">Valcro</a></p>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </div>
+
+    <div class="shoeslist col-md-9 row">
+
+
+        <% shoes.forEach(function(shoe){ %>
+        <div class="col-md-4 shoeitem <%=shoe.type %> <%=shoe.size %> <%=shoe.gender %> <%=shoe.price%> <%=shoe.lace%>"
+            id="myList">
+            <div class="mask">
+                <img class="img-fluid image " src=<%= shoe.image %> style="height:400px">
+            </div>
+            </a>
+            <div class=" pt-4">
+
+                <h5 class="shoename"><%= shoe.name %></h5>
+                <h5><span class="shoesize">Size Availble: <%=shoe.size %></span></h5>
+                <h5><span class="pricefound">₹<%=shoe.price %></span></h5>
+
+
+                <button data-shoes="<%= JSON.stringify(shoe)%>" class="addshoetocart btn-primary">
+                    <span>+</span>
+                    <span class="addtext">Add</span>
+                </button>
+            </div>
+            <div class="borderbottom">
+
+            </div>
+
+        </div>
+        <% }) %>
+    </div>
+    <script src="/js/explorefilter.js"></script>
+    <script src="/js/exploremain.js"></script>
+
+
+
+
+
+</div>
+<script>
+    function myFunction() {
+        document.getElementById("hidefilters").innerHTML
+
+
+
+        var x = document.getElementById("myDIV");
+
+        if (x.style.display === "none") {
+            x.style.display = "block";
+            document.getElementById("hidefilters").innerHTML = "Hide Filters"
+        } else {
+            x.style.display = "none";
+            document.getElementById("hidefilters").innerHTML = "Show filters"
+        }
+    }
+</script>

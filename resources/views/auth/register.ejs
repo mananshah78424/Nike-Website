@@ -1,0 +1,37 @@
+
+<link rel="stylesheet" href="/css/register.css">
+
+<div class="displaypic"></div>
+  <div class="container">
+    <h3 class="loginheading">Register </h3>
+
+
+    <!-- Makes POST request to /login route -->
+    <div class="loginform">
+
+
+      <form action="/register" method="POST" class="container" autocomplete="off">
+        <% if(messages.error) { %>
+        <span class="allfields"><%= messages.error %></span>
+        <% } %>
+        <div class="form-group field">
+            <label for="fname">First Name</label>
+            <input type="text" class="form-control hide " name="name" value="<%=messages.name %>">
+          </div>
+        <div class="form-group field">
+          <label for="email">Email</label>
+          <input type="email" class="form-control hide" name="email" autocomplete="false" value="<%=messages.email %>">
+        </div>
+        <div class="form-group field">
+          <label for="password">Password</label>
+          <input type="password" class="form-control hide" name="password" >
+        </div>
+        
+        <button type="submit" class="btn btn-dark">Register</button>
+      </form>
+      <p class="signup">Already a memeber? <a href="/login"><u class="underline">Login here</u></a></p>
+    </div>
+
+
+
+  </div>

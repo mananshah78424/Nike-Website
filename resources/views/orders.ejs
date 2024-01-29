@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="/css/order.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"
+    integrity="sha512-Izh34nqeeR7/nwthfeE0SI3c8uhFSnqxV0sI9TvTcXiFJkMd6fB644O64BRq2P/LA/+7eRvCw4GmLsXksyTHBg=="
+    crossorigin="anonymous"></script>
+<section>
+
+    <div class="container orders">
+        <h3 class="ordertext">All orders</h3>
+        <div>
+            <table class="ordertable">
+                <thead>
+                    <tr>
+                        <th class="ordercolumn">Orders</th>
+                        <th class="ordercolumn">Address</th>
+                        <th class="ordercolumn">Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% if(orders.length) {%>
+                    <% orders.forEach((order)=>{ %>
+                    <tr>
+                        <td class="orderid"><%=order._id %></td>
+                        <td class="orderaddress"><%=order.address %></td>
+                        <td class="ordertime">
+                            <%=moment(order.createdAt).format("hh:mm A")%>
+                        </td>
+
+                    </tr>
+                    <% }) %>
+                    <% } else{ %>
+                    <td class="">No Orders Found </td>
+                    <%}%>
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+</section>

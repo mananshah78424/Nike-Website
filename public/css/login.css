@@ -1,0 +1,39 @@
+.displaypic{
+    height: 500px;
+    background-image: url("/images/display.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .container{
+    margin: 0 auto;
+  }
+  .loginheading{
+    padding-top: 20px;
+    width: 100px;
+    margin: 0 auto;
+  }
+  .loginform{
+    padding: 25px;
+  
+    width: 500px;
+    margin: 0 auto;
+  }
+  .btn{
+    width: 100%;
+  }
+  .signup{
+    margin-top: 20px;
+    text-align: center;
+  }
+  .underline{
+  
+  width: 100%;
+  
+  }
+  .allfields{
+    color: red;
+    font-size: large;
+    margin: 10px 0px;
+
+}

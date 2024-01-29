@@ -1,0 +1,42 @@
+.orders {
+  margin: auto;
+  padding-top: 3rem;
+}
+.ordertext {
+  font-weight: 600;
+  font-size: larger;
+  margin-bottom: 1rem;
+}
+.ordertable {
+  min-width: 100%;
+  table-layout: auto;
+  background-color: white;
+}
+.ordercolumn {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: left;
+}
+.orderid {
+  border: 1px solid black;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: orange;
+}
+.orderaddress,
+.ordertime {
+  border: 1px solid black;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.btn {
+  margin: 20px 30px;
+  padding: 10px 20px;
+  border-radius: 30px;
+}

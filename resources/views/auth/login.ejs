@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="/css/login.css">
+
+<div class="displaypic"></div>
+<div class="container">
+  <h3 class="loginheading">Login </h3>
+
+
+  <!-- Makes POST request to /login route -->
+  <div class="loginform">
+
+
+    <form action="/login" method="POST" class="container">
+      <% if(messages.error) { %>
+      <span class="allfields"><%= messages.error %></span>
+      <% } %>
+      <div class="form-group field">
+        <label for="email">Email</label>
+        <input type="email" class="form-control field" name="email">
+      </div>
+      <div class="form-group field">
+        <label for="password">Password</label>
+        <input type="password" class="form-control field" name="password">
+      </div>
+      <button type="submit" class="btn btn-dark ">Login</button>
+    </form>
+    <p class="signup">Not a memeber? <a href="/register"><u class="underline">Sign up here</u></a></p>
+  </div>
+
+
+
+</div>
