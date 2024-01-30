@@ -19,6 +19,25 @@ The Nike Shoe Store Website is a full-stack web application designed to provide 
 
 Make sure to install the following dependencies before running the application:
 
+
+## Features
+
+1. **User Authentication:**
+   - Register and login to access personalized features.
+
+2. **Shopping Cart:**
+   - Add items to the cart and experience live interaction.
+
+3. **Payment:**
+   - Proceed to payment securely.
+
+4. **Purchase History:**
+   - View your past purchases.
+
+5. **Advanced Filtering:**
+   - Filter shoes based on size, gender, and other preferences.
+  
+
 ```json
 "dependencies": {
   "axios": "^0.20.0",
@@ -39,19 +58,3 @@ Make sure to install the following dependencies before running the application:
   "tailwindcss": "^1.8.10"
 }
 
-## Features
-
-1. **User Authentication:**
-   - Register and login to access personalized features.
-
-2. **Shopping Cart:**
-   - Add items to the cart and experience live interaction.
-
-3. **Payment:**
-   - Proceed to payment securely.
-
-4. **Purchase History:**
-   - View your past purchases.
-
-5. **Advanced Filtering:**
-   - Filter shoes based on size, gender, and other preferences.
